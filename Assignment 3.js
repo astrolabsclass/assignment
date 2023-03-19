@@ -90,14 +90,18 @@ if (house.garden[0] === true){
  //*
 
 // (8) Change the 'broken chair' in the kitchen to 'new chair'. Hint: Use the .replace() function
-
-for (var i = 0; i < house.areas.kitchen.items.length; i++) {
+//****************************** for loop solution******************************** */
+// for (var i = 0; i < house.areas.kitchen.items.length; i++) {
     
-    if (house.areas.kitchen.items[i] === 'broken chair') {
-      house.areas.kitchen.items[i] = 'new chair';
-    }
-  }
-  console.log(house.areas.kitchen.items);
+//     if (house.areas.kitchen.items[i] === 'broken chair') {
+//       house.areas.kitchen.items[i] = 'new chair';
+//     }
+//   }
+//   console.log(house.areas.kitchen.items);
+
+
+house.areas.kitchen.items[1] = house.areas.kitchen.items[1].replace('broken chair' , 'new chair');
+console.log(house.areas.kitchen.items[1]);
 
 //house.areas.kitchen.items[1] = 'new chair'; no function solution !!
 //console.log(house.areas.kitchen.items); no function  solution !!
